@@ -20,8 +20,8 @@
 </script>
 
 <svelte:head>
-  <title>~* Haleigh's Internet Corner *~</title>
-  <meta name="description" content="Welcome to Haleigh's personal corner of the internet!" />
+  <title>~* Haleigh's Personal Page *~</title>
+  <meta name="description" content="Haleigh's Website" />
   <meta name="theme-color" content="#6c43c0" />
 </svelte:head>
 
@@ -30,7 +30,7 @@
 
   <main class="window" id="top">
     <div class="titlebar">
-      <div class="window-title"><span class="cat-icon">🐈</span> Haleigh's Internet Corner</div>
+      <div class="window-title"><span class="cat-icon">🐈</span> Haleigh's Page</div>
       <div class="window-controls" aria-hidden="true">
         <span>−</span><span>□</span><span class="close">×</span>
       </div>
@@ -50,9 +50,6 @@
       <span class="go">➜ Go</span>
     </div>
 
-    <div class="marquee" aria-label="Welcome message">
-      <div class="marquee-track">★ WELCOME TO MY LITTLE CORNER OF THE WORLD WIDE WEB! ★ BEST VIEWED WITH CURIOSITY &amp; SNACKS ★</div>
-    </div>
 
     <div class="site-layout">
       <aside class="sidebar">
@@ -64,7 +61,7 @@
               <span class="online-dot"></span>
             </div>
             <h2>Haleigh</h2>
-            <p class="handle">@spaceycat</p>
+            <p class="handle">@haleighrenfroe</p>
             <p class="online">● ONLINE</p>
             <div class="mood"><strong>Mood:</strong> coding :3</div>
           </div>
@@ -100,10 +97,10 @@
           <div class="hero-copy">
             <p class="kicker">HELLO, INTERNET!</p>
             <h1 id="intro-title">I'm <span>Haleigh!</span></h1>
-            <p class="tagline">software engineer · musician · cat enthusiast</p>
+            <p class="tagline">software engineer | chill person | robloxian</p>
             <p class="welcome-copy">
-              Welcome to my personal website! I make software, play bass &amp; drums,
-              and think programming is really cool. <span class="text-face">:)</span>
+              Welcome to my personal website! I write software for space systems, I
+              like studying digital forensics, and I love learning new things in technology. :)
             </p>
             <div class="hero-actions">
               <a class="aero-button primary" href="#projects">View my cool stuff</a>
@@ -255,8 +252,6 @@
   .address-label { color: #544b60; }
   .address-field { flex: 1; padding: 5px 8px; border: 1px solid #9c96a4; background: white; box-shadow: inset 1px 1px 2px #ddd; color: #4f356e; }
   .go { padding-right: 5px; }
-  .marquee { overflow: hidden; border-bottom: 1px solid #7d5ab8; color: white; background: #351363; font: bold .72rem "Courier New", monospace; }
-  .marquee-track { width: max-content; padding: 7px 0; animation: scroll 22s linear infinite; }
   @keyframes scroll { from { transform: translateX(70%); } to { transform: translateX(-100%); } }
 
   .site-layout { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 18px; padding: 18px; background: linear-gradient(135deg, #ece3fb, #faf8fd 45%, #e5d9f5); }
@@ -291,7 +286,6 @@
   h1 span { color: #7947bd; font-style: italic; }
   .tagline { margin: 12px 0 18px; color: #754e96; font: bold .74rem "Courier New", monospace; }
   .welcome-copy { max-width: 550px; margin: 0; color: #4c3c58; font-size: .91rem; line-height: 1.6; }
-  .text-face { color: #8f40a9; font-weight: bold; }
   .hero-actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 21px; }
   .aero-button { min-height: 34px; display: inline-flex; align-items: center; padding: 0 14px; border: 1px solid #796493; border-radius: 4px; color: #332744; background: linear-gradient(#fff, #e4daec 50%, #ccc0d8 51%, #eee8f3); box-shadow: inset 0 0 0 1px white, 0 1px 2px #aaa; font-size: .76rem; font-weight: bold; text-decoration: none; }
   .aero-button.primary { border-color: #5c3492; color: white; text-shadow: 0 1px #49217b; background: linear-gradient(#a783d2, #8152b9 50%, #6d3daa 51%, #9b71c8); }
@@ -371,9 +365,5 @@
     .contact-links { grid-template-columns: 1fr 1fr; }
     .statusbar { grid-template-columns: 1fr 1fr; }
     .footer-center { display: none; }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    :global(html) { scroll-behavior: auto; }
-    .marquee-track { animation: none; width: auto; text-align: center; }
   }
 </style>
