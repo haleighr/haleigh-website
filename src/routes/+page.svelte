@@ -2,6 +2,7 @@
 
 
 <script>
+  import documentIcon from '$lib/assets/document-layout-right-svgrepo-com.svg';
   import emailIcon from '$lib/assets/email-1-svgrepo-com.svg';
   import githubIcon from '$lib/assets/github-142-svgrepo-com.svg';
   import linkedinIcon from '$lib/assets/linkedin-svgrepo-com.svg';
@@ -115,7 +116,10 @@
           <span>{link.label}</span>
         </a>
       {/each}
-      <a href={resumeHref} target="_blank" rel="noreferrer">Resume</a>
+      <a href={resumeHref} target="_blank" rel="noreferrer" aria-label="Resume">
+        <img src={documentIcon} alt="" aria-hidden="true" />
+        <span>Resume</span>
+      </a>
     </div>
   </section>
 </main>
