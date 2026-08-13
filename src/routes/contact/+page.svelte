@@ -1,2 +1,0 @@
-<!-- Contact page placeholder -->
-
